@@ -4,6 +4,7 @@ Vagrant.configure("2") do |config|
     machine1.vm.box = "centos/7"
     machine1.vm.box_url = "https://vagrantcloud.com/centos/7"
     machine1.vm.hostname = "machine1"
+    machine1.vm.network "private_network", ip: "10.0.0.1"
     machine1.vm.provider "virtualbox" do |vb|
      vb.memory = "1024"
     end
@@ -14,6 +15,7 @@ Vagrant.configure("2") do |config|
     machine2.vm.box = "centos/7"
     machine2.vm.box_url = "https://vagrantcloud.com/centos/7"
     machine2.vm.hostname = "machine2"
+    machine2.vm.network "private_network", ip: "10.0.0.2"
     machine2.vm.provider "virtualbox" do |vb|
      vb.memory = "1024"
     end
