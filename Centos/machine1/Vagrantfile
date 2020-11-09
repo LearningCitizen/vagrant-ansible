@@ -2,6 +2,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, inline:<<-SHELL
   echo "10.0.0.1 machine1" >> /etc/hosts
   echo "10.0.0.2 machine2" >> /etc/hosts
+  yum -y install epel-release
+  yum -y install ansible
   SHELL
 
   config.vm.define "machine1" do |machine1|
