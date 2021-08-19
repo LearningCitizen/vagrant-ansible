@@ -1,5 +1,5 @@
 # Architecture
-2 nodes setup: 2 nodes setup: 2 machines in Vagrant
+2 nodes setup: 2 machines in Vagrant
 Vagrant box: Os Centos 7 box
 
 # Requirements
