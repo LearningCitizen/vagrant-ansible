@@ -1,9 +1,16 @@
-# vagrant
+# vagrant-ansible
 
-Available boxes :<br>
+Thanks to Vagrant we can provide 2 virtual machines in which we can use ansible.  
+The machine virtualization provider used is Virtualbox.
+
+Boxes used :  
 * Centos
 
-# Useful commands
+## Requirements 
+- [Vagrant](https://www.vagrantup.com/downloads)
+- [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+
+## Useful commands
 
 * Init a directory with vagrantfile
 ```bash
